@@ -11,4 +11,14 @@ export class SalesDataService {
     return this._http.get('http://localhost:5000/api/order/' + pageIndex + '/' + pageSize)
       .pipe(map((res: any) => res.json()));
   }
+
+  getOrdersByCustomer(n: number) {
+    return this._http.get('http://localhost:5000/api/order/bycustomer/' + n)
+    .pipe(map((res: any) => res.json()));
+  }
+
+  getOrdersByState() {
+    return this._http.get('http://localhost:5000/api/order/bystate/')
+    .pipe(map((res: any) => res.json()));
+  }
 }

@@ -39,7 +39,7 @@ export class BarChartComponent implements OnInit {
     const data = this.orders.map(o => o.total);
 
     const formattedOrders = this.orders.reduce((r, e) => {
-      r.push([moment(e.placed).format('YY-MM-DD'), e.total]);
+      r.push([moment(e.placed).format('DD-MM-YYYY'), e.total]);
       return r;
     }, []);
 
