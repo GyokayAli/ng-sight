@@ -19,6 +19,7 @@ import { PaginationComponent } from './pagination/pagination.component';
 
 // Services
 import { SalesDataService } from './services/sales-data.service';
+import { ServerService } from 'src/app/services/server.service';
 import { appRoutes } from 'src/routes';
 
 @NgModule({
@@ -42,7 +43,8 @@ import { appRoutes } from 'src/routes';
     HttpModule
   ],
   providers: [
-    SalesDataService
+    SalesDataService,
+    ServerService
   ],
   bootstrap: [AppComponent]
 })
