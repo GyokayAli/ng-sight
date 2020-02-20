@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## <h5>Credit</h5>
 
-<h5>Many thanks to `Wes Doyle` and his awesome YouTube tutorials.</h5>
+<h5>Many thanks to Wes Doyle and his awesome YouTube tutorials.</h5>
